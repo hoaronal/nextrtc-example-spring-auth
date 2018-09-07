@@ -28,7 +28,7 @@ ct?
 Enter key password for <tomcat> (RETURN if same as keystore password): <RETURN>
 ```
 then:
-- run: mvn clean package && java -jar target/spring-auth.war
+- run: `mvn clean package && java -jar target/spring-auth.war`
 - enter https://localhost:8443 in your favourite browser
 #### HTTPS is important, because default http handler isn't configured ####
 - accept untrusted certificate
@@ -36,3 +36,4 @@ then:
 ###############
 Sometimes websocket (js side) is throwing exception then try to change localhost to 127.0.0.1
 
+## TO INVALIDATE SESSION type leg inside the text form and press upperCase

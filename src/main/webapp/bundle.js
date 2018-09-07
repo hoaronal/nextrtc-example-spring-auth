@@ -1,111 +1,111 @@
 /******/
 (function (modules) { // webpackBootstrap
-    /******/ 	// The module cache
-    /******/
+  /******/ 	// The module cache
+  /******/
     var installedModules = {};
-    /******/
-    /******/ 	// The require function
-    /******/
+  /******/
+  /******/ 	// The require function
+  /******/
     function __webpack_require__(moduleId) {
-        /******/
-        /******/ 		// Check if module is in cache
-        /******/
+      /******/
+      /******/ 		// Check if module is in cache
+      /******/
         if (installedModules[moduleId]) {
-            /******/
+          /******/
             return installedModules[moduleId].exports;
-            /******/
+          /******/
         }
-        /******/ 		// Create a new module (and put it into the cache)
-        /******/
+      /******/ 		// Create a new module (and put it into the cache)
+      /******/
         var module = installedModules[moduleId] = {
-            /******/            i: moduleId,
-            /******/            l: false,
-            /******/            exports: {}
-            /******/
+          /******/            i: moduleId,
+          /******/            l: false,
+          /******/            exports: {}
+          /******/
         };
-        /******/
-        /******/ 		// Execute the module function
-        /******/
+      /******/
+      /******/ 		// Execute the module function
+      /******/
         modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
-        /******/
-        /******/ 		// Flag the module as loaded
-        /******/
+      /******/
+      /******/ 		// Flag the module as loaded
+      /******/
         module.l = true;
-        /******/
-        /******/ 		// Return the exports of the module
-        /******/
+      /******/
+      /******/ 		// Return the exports of the module
+      /******/
         return module.exports;
-        /******/
+      /******/
     }
 
-    /******/
-    /******/
-    /******/ 	// expose the modules object (__webpack_modules__)
-    /******/
+  /******/
+  /******/
+  /******/ 	// expose the modules object (__webpack_modules__)
+  /******/
     __webpack_require__.m = modules;
-    /******/
-    /******/ 	// expose the module cache
-    /******/
+  /******/
+  /******/ 	// expose the module cache
+  /******/
     __webpack_require__.c = installedModules;
-    /******/
-    /******/ 	// define getter function for harmony exports
-    /******/
+  /******/
+  /******/ 	// define getter function for harmony exports
+  /******/
     __webpack_require__.d = function (exports, name, getter) {
-        /******/
+      /******/
         if (!__webpack_require__.o(exports, name)) {
-            /******/
+          /******/
             Object.defineProperty(exports, name, {enumerable: true, get: getter});
-            /******/
+          /******/
         }
-        /******/
+      /******/
     };
-    /******/
-    /******/ 	// define __esModule on exports
-    /******/
+  /******/
+  /******/ 	// define __esModule on exports
+  /******/
     __webpack_require__.r = function (exports) {
-        /******/
+      /******/
         if (typeof Symbol !== 'undefined' && Symbol.toStringTag) {
-            /******/
+          /******/
             Object.defineProperty(exports, Symbol.toStringTag, {value: 'Module'});
-            /******/
+          /******/
         }
-        /******/
+      /******/
         Object.defineProperty(exports, '__esModule', {value: true});
-        /******/
+      /******/
     };
-    /******/
-    /******/ 	// create a fake namespace object
-    /******/ 	// mode & 1: value is a module id, require it
-    /******/ 	// mode & 2: merge all properties of value into the ns
-    /******/ 	// mode & 4: return value when already ns object
-    /******/ 	// mode & 8|1: behave like require
-    /******/
+  /******/
+  /******/ 	// create a fake namespace object
+  /******/ 	// mode & 1: value is a module id, require it
+  /******/ 	// mode & 2: merge all properties of value into the ns
+  /******/ 	// mode & 4: return value when already ns object
+  /******/ 	// mode & 8|1: behave like require
+  /******/
     __webpack_require__.t = function (value, mode) {
-        /******/
+      /******/
         if (mode & 1) value = __webpack_require__(value);
-        /******/
+      /******/
         if (mode & 8) return value;
-        /******/
+      /******/
         if ((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
-        /******/
+      /******/
         var ns = Object.create(null);
-        /******/
+      /******/
         __webpack_require__.r(ns);
-        /******/
+      /******/
         Object.defineProperty(ns, 'default', {enumerable: true, value: value});
-        /******/
+      /******/
         if (mode & 2 && typeof value != 'string') for (var key in value) __webpack_require__.d(ns, key, function (key) {
             return value[key];
         }.bind(null, key));
-        /******/
+      /******/
         return ns;
-        /******/
+      /******/
     };
-    /******/
-    /******/ 	// getDefaultExport function for compatibility with non-harmony modules
-    /******/
+  /******/
+  /******/ 	// getDefaultExport function for compatibility with non-harmony modules
+  /******/
     __webpack_require__.n = function (module) {
-        /******/
+      /******/
         var getter = module && module.__esModule ?
             /******/            function getDefault() {
                 return module['default'];
@@ -113,33 +113,33 @@
             /******/            function getModuleExports() {
                 return module;
             };
-        /******/
+      /******/
         __webpack_require__.d(getter, 'a', getter);
-        /******/
+      /******/
         return getter;
-        /******/
+      /******/
     };
-    /******/
-    /******/ 	// Object.prototype.hasOwnProperty.call
-    /******/
+  /******/
+  /******/ 	// Object.prototype.hasOwnProperty.call
+  /******/
     __webpack_require__.o = function (object, property) {
         return Object.prototype.hasOwnProperty.call(object, property);
     };
-    /******/
-    /******/ 	// __webpack_public_path__
-    /******/
+  /******/
+  /******/ 	// __webpack_public_path__
+  /******/
     __webpack_require__.p = "";
-    /******/
-    /******/
-    /******/ 	// Load entry module and return exports
-    /******/
+  /******/
+  /******/
+  /******/ 	// Load entry module and return exports
+  /******/
     return __webpack_require__(__webpack_require__.s = 0);
-    /******/
+  /******/
 })
 /************************************************************************/
 /******/([
-    /* 0 */
-    /***/ (function (module, exports, __webpack_require__) {
+  /* 0 */
+  /***/ (function (module, exports, __webpack_require__) {
 
         const NextRTC = __webpack_require__(1);
         const $ = __webpack_require__(17);
@@ -158,7 +158,7 @@
                 nextRTC.join(convId);
             },
             leaveConversation: function () {
-                $('#container').empty();
+                $('.remotestream').remove();
                 nextRTC.leave();
             },
             upperCase: function () {
@@ -189,7 +189,7 @@
 
         nextRTC.on('upperCase', function (event) {
             $('#convId').val(event.content);
-        })
+        });
 
         nextRTC.on('created', function (event) {
             $('#log').append('<li>Room with id ' + event.content + ' has been created, share it with your friend to start videochat</li>');
@@ -211,7 +211,7 @@
         });
 
         nextRTC.on('remoteStream', function (stream) {
-            var dest = $("#template").clone().prop({id: stream.member});
+            var dest = $("#template").clone().addClass('remotestream').prop({id: stream.member});
             $("#container").append(dest);
             dest[0].srcObject = stream.stream;
         });
@@ -227,10 +227,10 @@
         });
 
 
-        /***/
+    /***/
     }),
-    /* 1 */
-    /***/ (function (module, exports, __webpack_require__) {
+  /* 1 */
+  /***/ (function (module, exports, __webpack_require__) {
 
         "use strict";
 
@@ -313,11 +313,12 @@
         }();
 
         var SignalingChannel = function () {
-            function SignalingChannel(wsURL) {
+            function SignalingChannel(wsURL, debug) {
                 var _this = this;
 
                 _classCallCheck(this, SignalingChannel);
 
+                this.debug = debug;
                 this.onSignal = function () {
                 };
                 this.waiting = [];
@@ -332,7 +333,9 @@
                 };
 
                 this.websocket.onmessage = function (event) {
-                    console.log('res: ' + event.data);
+                    if (debug) {
+                        console.log('res: ' + event.data);
+                    }
                     var signal = JSON.parse(event.data);
                     _this.onSignal(signal.signal, signal);
                 };
@@ -342,7 +345,9 @@
                 };
 
                 this.websocket.onerror = function (error) {
-                    console.log('Communication channel is broken', error);
+                    if (debug) {
+                        console.log('Communication channel is broken', error);
+                    }
                     _this.onSignal('error', error);
                 };
             }
@@ -355,7 +360,9 @@
                             this.waiting.push(payload);
                         }
                     }
-                    console.log('req: ', payload);
+                    if (this.debug) {
+                        console.log('req: ', payload);
+                    }
                     this.websocket.send(JSON.stringify(payload));
                 }
             }, {
@@ -379,11 +386,14 @@
             function NextRTCClient(configuration) {
                 var _this2 = this;
 
+                var debug = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
+
                 _classCallCheck(this, NextRTCClient);
 
+                this.debug = debug;
                 this.configuration = configuration;
                 this.handlers = this.initHandlers();
-                this.channel = new SignalingChannel(configuration.wsURL);
+                this.channel = new SignalingChannel(configuration.wsURL, this.debug);
                 this.localStream = undefined;
                 this.peerConnections = {};
                 this.channel.setSignal(function (s, p) {
@@ -395,7 +405,9 @@
                 key: 'on',
                 value: function on(signal, handler) {
                     if (this.handlers[signal]) {
-                        console.log("Replacing handler for signal: " + signal);
+                        if (this.debug) {
+                            console.log("Replacing handler for signal: " + signal);
+                        }
                     }
                     this.handlers[signal] = handler;
                 }
@@ -554,7 +566,7 @@
 
                     this.onPeerConnection(message.from, function (peer) {
                         peer.addIceCandidate(new RTCIceCandidate(JSON.parse(message.content.replace(new RegExp('\'', 'g'), '"')), function () {
-                            return console.log('candidates exchanged');
+                            return _this10.debug ? console.log('candidates exchanged') : null;
                         }, function (err) {
                             return _this10.execute('error', 'Candidate: Failed to exchange candidates ' + err);
                         }));
@@ -575,7 +587,7 @@
                             return _this11.onIceCandidate(connectionName, event);
                         };
                         remoteConnection.oniceconnectionstatechange = function (change) {
-                            return console.log('(' + connectionName + ') changed state to', remoteConnection.iceConnectionState);
+                            return _this11.debug ? console.log('(' + connectionName + ') changed state to', remoteConnection.iceConnectionState) : null;
                         };
                     }
                     cb(remoteConnection);
@@ -591,8 +603,12 @@
                     if (this.handlers.hasOwnProperty(signal)) try {
                         this.handlers[signal](event);
                     } catch (err) {
-                        console.log('User handler on ' + signal + ' failed!', err);
-                    } else console.log('Missing handler for ' + signal);
+                        if (this.debug) {
+                            console.log('User handler on ' + signal + ' failed!', err);
+                        }
+                    } else if (this.debug) {
+                        console.log('Missing handler for ' + signal);
+                    }
                 }
             }, {
                 key: 'create',
@@ -632,13 +648,13 @@
 
         module.exports = NextRTCClient;
 
-        /***/
+    /***/
     }),
-    /* 2 */
-    /***/ (function (module, exports, __webpack_require__) {
+  /* 2 */
+  /***/ (function (module, exports, __webpack_require__) {
 
         "use strict";
-        /* WEBPACK VAR INJECTION */
+    /* WEBPACK VAR INJECTION */
         (function (global) {/*
          *  Copyright (c) 2016 The WebRTC project authors. All Rights Reserved.
          *
@@ -646,19 +662,19 @@
          *  that can be found in the LICENSE file in the root of the source
          *  tree.
          */
-            /* eslint-env node */
+          /* eslint-env node */
 
 
             var adapterFactory = __webpack_require__(4);
             module.exports = adapterFactory({window: global.window});
 
-            /* WEBPACK VAR INJECTION */
+          /* WEBPACK VAR INJECTION */
         }.call(this, __webpack_require__(3)))
 
-        /***/
+    /***/
     }),
-    /* 3 */
-    /***/ (function (module, exports) {
+  /* 3 */
+  /***/ (function (module, exports) {
 
         var g;
 
@@ -682,20 +698,20 @@
         module.exports = g;
 
 
-        /***/
+    /***/
     }),
-    /* 4 */
-    /***/ (function (module, exports, __webpack_require__) {
+  /* 4 */
+  /***/ (function (module, exports, __webpack_require__) {
 
         "use strict";
-        /*
-         *  Copyright (c) 2016 The WebRTC project authors. All Rights Reserved.
-         *
-         *  Use of this source code is governed by a BSD-style license
-         *  that can be found in the LICENSE file in the root of the source
-         *  tree.
-         */
-        /* eslint-env node */
+    /*
+     *  Copyright (c) 2016 The WebRTC project authors. All Rights Reserved.
+     *
+     *  Use of this source code is governed by a BSD-style license
+     *  that can be found in the LICENSE file in the root of the source
+     *  tree.
+     */
+    /* eslint-env node */
 
 
         var utils = __webpack_require__(5);
@@ -843,20 +859,20 @@
         };
 
 
-        /***/
+    /***/
     }),
-    /* 5 */
-    /***/ (function (module, exports, __webpack_require__) {
+  /* 5 */
+  /***/ (function (module, exports, __webpack_require__) {
 
         "use strict";
-        /*
-         *  Copyright (c) 2016 The WebRTC project authors. All Rights Reserved.
-         *
-         *  Use of this source code is governed by a BSD-style license
-         *  that can be found in the LICENSE file in the root of the source
-         *  tree.
-         */
-        /* eslint-env node */
+    /*
+     *  Copyright (c) 2016 The WebRTC project authors. All Rights Reserved.
+     *
+     *  Use of this source code is governed by a BSD-style license
+     *  that can be found in the LICENSE file in the root of the source
+     *  tree.
+     */
+    /* eslint-env node */
 
 
         var logDisabled_ = true;
@@ -1031,26 +1047,26 @@
         };
 
 
-        /***/
+    /***/
     }),
-    /* 6 */
-    /***/ (function (module, exports, __webpack_require__) {
+  /* 6 */
+  /***/ (function (module, exports, __webpack_require__) {
 
         "use strict";
 
-        /*
-         *  Copyright (c) 2016 The WebRTC project authors. All Rights Reserved.
-         *
-         *  Use of this source code is governed by a BSD-style license
-         *  that can be found in the LICENSE file in the root of the source
-         *  tree.
-         */
-        /* eslint-env node */
+    /*
+     *  Copyright (c) 2016 The WebRTC project authors. All Rights Reserved.
+     *
+     *  Use of this source code is governed by a BSD-style license
+     *  that can be found in the LICENSE file in the root of the source
+     *  tree.
+     */
+    /* eslint-env node */
 
         var utils = __webpack_require__(5);
         var logging = utils.log;
 
-        /* iterates the stats graph recursively. */
+    /* iterates the stats graph recursively. */
         function walkStats(stats, base, resultSet) {
             if (!base || resultSet.has(base.id)) {
                 return;
@@ -1067,7 +1083,7 @@
             });
         }
 
-        /* filter getStats for a sender/receiver track. */
+    /* filter getStats for a sender/receiver track. */
         function filterStats(result, track, outbound) {
             var streamStatsType = outbound ? 'outbound-rtp' : 'inbound-rtp';
             var filteredResult = new Map();
@@ -1304,10 +1320,10 @@
                     window.RTCRtpSender.prototype.getStats = function () {
                         var sender = this;
                         return this._pc.getStats().then(function (result) {
-                            /* Note: this will include stats of all senders that
-                             *   send a track with the same id as sender.track as
-                             *   it is not possible to identify the RTCRtpSender.
-                             */
+                          /* Note: this will include stats of all senders that
+                           *   send a track with the same id as sender.track as
+                           *   it is not possible to identify the RTCRtpSender.
+                           */
                             return filterStats(result, sender.track, true);
                         });
                     };
@@ -1981,20 +1997,20 @@
         };
 
 
-        /***/
+    /***/
     }),
-    /* 7 */
-    /***/ (function (module, exports, __webpack_require__) {
+  /* 7 */
+  /***/ (function (module, exports, __webpack_require__) {
 
         "use strict";
-        /*
-         *  Copyright (c) 2016 The WebRTC project authors. All Rights Reserved.
-         *
-         *  Use of this source code is governed by a BSD-style license
-         *  that can be found in the LICENSE file in the root of the source
-         *  tree.
-         */
-        /* eslint-env node */
+    /*
+     *  Copyright (c) 2016 The WebRTC project authors. All Rights Reserved.
+     *
+     *  Use of this source code is governed by a BSD-style license
+     *  that can be found in the LICENSE file in the root of the source
+     *  tree.
+     */
+    /* eslint-env node */
 
         var utils = __webpack_require__(5);
         var logging = utils.log;
@@ -2237,20 +2253,20 @@
         };
 
 
-        /***/
+    /***/
     }),
-    /* 8 */
-    /***/ (function (module, exports, __webpack_require__) {
+  /* 8 */
+  /***/ (function (module, exports, __webpack_require__) {
 
         "use strict";
-        /*
-         *  Copyright (c) 2016 The WebRTC project authors. All Rights Reserved.
-         *
-         *  Use of this source code is governed by a BSD-style license
-         *  that can be found in the LICENSE file in the root of the source
-         *  tree.
-         */
-        /* eslint-env node */
+    /*
+     *  Copyright (c) 2016 The WebRTC project authors. All Rights Reserved.
+     *
+     *  Use of this source code is governed by a BSD-style license
+     *  that can be found in the LICENSE file in the root of the source
+     *  tree.
+     */
+    /* eslint-env node */
 
 
         var utils = __webpack_require__(5);
@@ -2333,20 +2349,20 @@
         };
 
 
-        /***/
+    /***/
     }),
-    /* 9 */
-    /***/ (function (module, exports, __webpack_require__) {
+  /* 9 */
+  /***/ (function (module, exports, __webpack_require__) {
 
         "use strict";
-        /*
-         *  Copyright (c) 2018 The WebRTC project authors. All Rights Reserved.
-         *
-         *  Use of this source code is governed by a BSD-style license
-         *  that can be found in the LICENSE file in the root of the source
-         *  tree.
-         */
-        /* eslint-env node */
+    /*
+     *  Copyright (c) 2018 The WebRTC project authors. All Rights Reserved.
+     *
+     *  Use of this source code is governed by a BSD-style license
+     *  that can be found in the LICENSE file in the root of the source
+     *  tree.
+     */
+    /* eslint-env node */
 
 
         var utils = __webpack_require__(5);
@@ -2390,20 +2406,20 @@
         };
 
 
-        /***/
+    /***/
     }),
-    /* 10 */
-    /***/ (function (module, exports, __webpack_require__) {
+  /* 10 */
+  /***/ (function (module, exports, __webpack_require__) {
 
         "use strict";
-        /*
-         *  Copyright (c) 2017 The WebRTC project authors. All Rights Reserved.
-         *
-         *  Use of this source code is governed by a BSD-style license
-         *  that can be found in the LICENSE file in the root of the source
-         *  tree.
-         */
-        /* eslint-env node */
+    /*
+     *  Copyright (c) 2017 The WebRTC project authors. All Rights Reserved.
+     *
+     *  Use of this source code is governed by a BSD-style license
+     *  that can be found in the LICENSE file in the root of the source
+     *  tree.
+     */
+    /* eslint-env node */
 
 
         var SDPUtils = __webpack_require__(11);
@@ -3628,11 +3644,11 @@
 
             RTCPeerConnection.prototype.close = function () {
                 this.transceivers.forEach(function (transceiver) {
-                    /* not yet
-                     if (transceiver.iceGatherer) {
-                     transceiver.iceGatherer.close();
-                     }
-                     */
+                  /* not yet
+                   if (transceiver.iceGatherer) {
+                   transceiver.iceGatherer.close();
+                   }
+                   */
                     if (transceiver.iceTransport) {
                         transceiver.iceTransport.stop();
                     }
@@ -4234,13 +4250,13 @@
         };
 
 
-        /***/
+    /***/
     }),
-    /* 11 */
-    /***/ (function (module, exports, __webpack_require__) {
+  /* 11 */
+  /***/ (function (module, exports, __webpack_require__) {
 
         "use strict";
-        /* eslint-env node */
+    /* eslint-env node */
 
 
 // SDP helpers.
@@ -4950,20 +4966,20 @@
         }
 
 
-        /***/
+    /***/
     }),
-    /* 12 */
-    /***/ (function (module, exports, __webpack_require__) {
+  /* 12 */
+  /***/ (function (module, exports, __webpack_require__) {
 
         "use strict";
-        /*
-         *  Copyright (c) 2016 The WebRTC project authors. All Rights Reserved.
-         *
-         *  Use of this source code is governed by a BSD-style license
-         *  that can be found in the LICENSE file in the root of the source
-         *  tree.
-         */
-        /* eslint-env node */
+    /*
+     *  Copyright (c) 2016 The WebRTC project authors. All Rights Reserved.
+     *
+     *  Use of this source code is governed by a BSD-style license
+     *  that can be found in the LICENSE file in the root of the source
+     *  tree.
+     */
+    /* eslint-env node */
 
 
 // Expose public methods.
@@ -4991,20 +5007,20 @@
         };
 
 
-        /***/
+    /***/
     }),
-    /* 13 */
-    /***/ (function (module, exports, __webpack_require__) {
+  /* 13 */
+  /***/ (function (module, exports, __webpack_require__) {
 
         "use strict";
-        /*
-         *  Copyright (c) 2016 The WebRTC project authors. All Rights Reserved.
-         *
-         *  Use of this source code is governed by a BSD-style license
-         *  that can be found in the LICENSE file in the root of the source
-         *  tree.
-         */
-        /* eslint-env node */
+    /*
+     *  Copyright (c) 2016 The WebRTC project authors. All Rights Reserved.
+     *
+     *  Use of this source code is governed by a BSD-style license
+     *  that can be found in the LICENSE file in the root of the source
+     *  tree.
+     */
+    /* eslint-env node */
 
 
         var utils = __webpack_require__(5);
@@ -5308,20 +5324,20 @@
         };
 
 
-        /***/
+    /***/
     }),
-    /* 14 */
-    /***/ (function (module, exports, __webpack_require__) {
+  /* 14 */
+  /***/ (function (module, exports, __webpack_require__) {
 
         "use strict";
-        /*
-         *  Copyright (c) 2016 The WebRTC project authors. All Rights Reserved.
-         *
-         *  Use of this source code is governed by a BSD-style license
-         *  that can be found in the LICENSE file in the root of the source
-         *  tree.
-         */
-        /* eslint-env node */
+    /*
+     *  Copyright (c) 2016 The WebRTC project authors. All Rights Reserved.
+     *
+     *  Use of this source code is governed by a BSD-style license
+     *  that can be found in the LICENSE file in the root of the source
+     *  tree.
+     */
+    /* eslint-env node */
 
 
         var utils = __webpack_require__(5);
@@ -5526,19 +5542,19 @@
         };
 
 
-        /***/
+    /***/
     }),
-    /* 15 */
-    /***/ (function (module, exports, __webpack_require__) {
+  /* 15 */
+  /***/ (function (module, exports, __webpack_require__) {
 
         "use strict";
-        /*
-         *  Copyright (c) 2016 The WebRTC project authors. All Rights Reserved.
-         *
-         *  Use of this source code is governed by a BSD-style license
-         *  that can be found in the LICENSE file in the root of the source
-         *  tree.
-         */
+    /*
+     *  Copyright (c) 2016 The WebRTC project authors. All Rights Reserved.
+     *
+     *  Use of this source code is governed by a BSD-style license
+     *  that can be found in the LICENSE file in the root of the source
+     *  tree.
+     */
 
         var utils = __webpack_require__(5);
 
@@ -5848,20 +5864,20 @@
         };
 
 
-        /***/
+    /***/
     }),
-    /* 16 */
-    /***/ (function (module, exports, __webpack_require__) {
+  /* 16 */
+  /***/ (function (module, exports, __webpack_require__) {
 
         "use strict";
-        /*
-         *  Copyright (c) 2017 The WebRTC project authors. All Rights Reserved.
-         *
-         *  Use of this source code is governed by a BSD-style license
-         *  that can be found in the LICENSE file in the root of the source
-         *  tree.
-         */
-        /* eslint-env node */
+    /*
+     *  Copyright (c) 2017 The WebRTC project authors. All Rights Reserved.
+     *
+     *  Use of this source code is governed by a BSD-style license
+     *  that can be found in the LICENSE file in the root of the source
+     *  tree.
+     */
+    /* eslint-env node */
 
 
         var SDPUtils = __webpack_require__(11);
@@ -6147,25 +6163,25 @@
         };
 
 
-        /***/
+    /***/
     }),
-    /* 17 */
-    /***/ (function (module, exports, __webpack_require__) {
+  /* 17 */
+  /***/ (function (module, exports, __webpack_require__) {
 
         var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;
-        /*!
-         * jQuery JavaScript Library v3.3.1
-         * https://jquery.com/
-         *
-         * Includes Sizzle.js
-         * https://sizzlejs.com/
-         *
-         * Copyright JS Foundation and other contributors
-         * Released under the MIT license
-         * https://jquery.org/license
-         *
-         * Date: 2018-01-20T17:24Z
-         */
+    /*!
+     * jQuery JavaScript Library v3.3.1
+     * https://jquery.com/
+     *
+     * Includes Sizzle.js
+     * https://sizzlejs.com/
+     *
+     * Copyright JS Foundation and other contributors
+     * Released under the MIT license
+     * https://jquery.org/license
+     *
+     * Date: 2018-01-20T17:24Z
+     */
         (function (global, factory) {
 
             "use strict";
@@ -6276,7 +6292,7 @@
                     typeof obj;
             }
 
-            /* global Symbol */
+          /* global Symbol */
 // Defining this global in .eslintrc.json would create a danger of using the global
 // unguarded in another place, it seems safer to define global only for this module
 
@@ -6484,7 +6500,7 @@
 
                 isEmptyObject: function (obj) {
 
-                    /* eslint-disable no-unused-vars */
+                  /* eslint-disable no-unused-vars */
                     // See https://github.com/eslint/eslint/issues/6125
                     var name;
 
@@ -7253,8 +7269,8 @@
                             }
                         }
 
-                        /* Attributes
-                         ---------------------------------------------------------------------- */
+                      /* Attributes
+                       ---------------------------------------------------------------------- */
 
                         // Support: IE<8
                         // Verify that getAttribute really returns attributes and not properties
@@ -7264,8 +7280,8 @@
                             return !el.getAttribute("className");
                         });
 
-                        /* getElement(s)By*
-                         ---------------------------------------------------------------------- */
+                      /* getElement(s)By*
+                       ---------------------------------------------------------------------- */
 
                         // Check if getElementsByTagName("*") returns only elements
                         support.getElementsByTagName = assert(function (el) {
@@ -7379,8 +7395,8 @@
                                 }
                             };
 
-                        /* QSA/matchesSelector
-                         ---------------------------------------------------------------------- */
+                      /* QSA/matchesSelector
+                       ---------------------------------------------------------------------- */
 
                         // QSA and matchesSelector support
 
@@ -7497,8 +7513,8 @@
                         rbuggyQSA = rbuggyQSA.length && new RegExp(rbuggyQSA.join("|"));
                         rbuggyMatches = rbuggyMatches.length && new RegExp(rbuggyMatches.join("|"));
 
-                        /* Contains
-                         ---------------------------------------------------------------------- */
+                      /* Contains
+                       ---------------------------------------------------------------------- */
                         hasCompare = rnative.test(docElem.compareDocumentPosition);
 
                         // Element contains another
@@ -7525,8 +7541,8 @@
                                 return false;
                             };
 
-                        /* Sorting
-                         ---------------------------------------------------------------------- */
+                      /* Sorting
+                       ---------------------------------------------------------------------- */
 
                         // Document order sorting
                         sortOrder = hasCompare ?
@@ -7803,16 +7819,16 @@
                             },
 
                             "CHILD": function (match) {
-                                /* matches from matchExpr["CHILD"]
-                                 1 type (only|nth|...)
-                                 2 what (child|of-type)
-                                 3 argument (even|odd|\d*|\d*n([+-]\d+)?|...)
-                                 4 xn-component of xn+y argument ([+-]?\d*n|)
-                                 5 sign of xn-component
-                                 6 x of xn-component
-                                 7 sign of y-component
-                                 8 y of y-component
-                                 */
+                              /* matches from matchExpr["CHILD"]
+                               1 type (only|nth|...)
+                               2 what (child|of-type)
+                               3 argument (even|odd|\d*|\d*n([+-]\d+)?|...)
+                               4 xn-component of xn+y argument ([+-]?\d*n|)
+                               5 sign of xn-component
+                               6 x of xn-component
+                               7 sign of y-component
+                               8 y of y-component
+                               */
                                 match[1] = match[1].toLowerCase();
 
                                 if (match[1].slice(0, 3) === "nth") {
@@ -8967,6 +8983,7 @@
             var rsingleTag = ( /^<([a-z][^\/\0>:\x20\t\r\n\f]*)[\x20\t\r\n\f]*\/?>(?:<\/\1>|)$/i );
 
 
+
 // Implement the identical functionality for filter and not
             function winnow(elements, qualifier, not) {
                 if (isFunction(qualifier)) {
@@ -9349,6 +9366,7 @@
             var rnothtmlwhite = ( /[^\x20\t\r\n\f]+/g );
 
 
+
 // Convert String-formatted options into Object-formatted ones
             function createOptions(options) {
                 var object = {};
@@ -9358,28 +9376,28 @@
                 return object;
             }
 
-            /*
-             * Create a callback list using the following parameters:
-             *
-             *	options: an optional list of space-separated options that will change how
-             *			the callback list behaves or a more traditional option object
-             *
-             * By default a callback list will act like an event callback list and can be
-             * "fired" multiple times.
-             *
-             * Possible options:
-             *
-             *	once:			will ensure the callback list can only be fired once (like a Deferred)
-             *
-             *	memory:			will keep track of previous values and will call any callback added
-             *					after the list has been fired right away with the latest "memorized"
-             *					values (like a Deferred)
-             *
-             *	unique:			will ensure a callback can only be added once (no duplicate in the list)
-             *
-             *	stopOnFalse:	interrupt callings when a callback returns false
-             *
-             */
+          /*
+           * Create a callback list using the following parameters:
+           *
+           *	options: an optional list of space-separated options that will change how
+           *			the callback list behaves or a more traditional option object
+           *
+           * By default a callback list will act like an event callback list and can be
+           * "fired" multiple times.
+           *
+           * Possible options:
+           *
+           *	once:			will ensure the callback list can only be fired once (like a Deferred)
+           *
+           *	memory:			will keep track of previous values and will call any callback added
+           *					after the list has been fired right away with the latest "memorized"
+           *					values (like a Deferred)
+           *
+           *	unique:			will ensure a callback can only be added once (no duplicate in the list)
+           *
+           *	stopOnFalse:	interrupt callings when a callback returns false
+           *
+           */
             jQuery.Callbacks = function (options) {
 
                 // Convert options from String-formatted to Object-formatted if needed
@@ -10309,6 +10327,7 @@
             var dataUser = new Data();
 
 
+
 //	Implementation Summary
 //
 //	1. Enforce API surface and semantic compatibility with 1.9.x branch
@@ -10825,6 +10844,7 @@
             var rscriptType = ( /^$|^module$|\/(?:java|ecma)script/i );
 
 
+
 // We have to close these tags to support XHTML (#13200)
             var wrapMap = {
 
@@ -11090,10 +11110,10 @@
                 });
             }
 
-            /*
-             * Helper functions for managing events -- not part of the public interface.
-             * Props to Dean Edwards' addEvent library for many of the ideas.
-             */
+          /*
+           * Helper functions for managing events -- not part of the public interface.
+           * Props to Dean Edwards' addEvent library for many of the ideas.
+           */
             jQuery.event = {
 
                 global: {},
@@ -13150,11 +13170,11 @@
                             showHide([elem], true);
                         }
 
-                        /* eslint-disable no-loop-func */
+                      /* eslint-disable no-loop-func */
 
                         anim.done(function () {
 
-                            /* eslint-enable no-loop-func */
+                          /* eslint-enable no-loop-func */
 
                             // The final step of a "hide" animation is actually hiding the element
                             if (!hidden) {
@@ -13885,7 +13905,7 @@
                 jQuery.propHooks.selected = {
                     get: function (elem) {
 
-                        /* eslint no-unused-expressions: "off" */
+                      /* eslint no-unused-expressions: "off" */
 
                         var parent = elem.parentNode;
                         if (parent && parent.parentNode) {
@@ -13895,7 +13915,7 @@
                     },
                     set: function (elem) {
 
-                        /* eslint no-unused-expressions: "off" */
+                      /* eslint no-unused-expressions: "off" */
 
                         var parent = elem.parentNode;
                         if (parent) {
@@ -14249,7 +14269,7 @@
                             while (i--) {
                                 option = options[i];
 
-                                /* eslint-disable no-cond-assign */
+                              /* eslint-disable no-cond-assign */
 
                                 if (option.selected =
                                         jQuery.inArray(jQuery.valHooks.option.get(option), values) > -1
@@ -14257,7 +14277,7 @@
                                     optionSet = true;
                                 }
 
-                                /* eslint-enable no-cond-assign */
+                              /* eslint-enable no-cond-assign */
                             }
 
                             // Force browsers to behave consistently when non-matching value is set
@@ -14526,6 +14546,7 @@
             var rquery = ( /\?/ );
 
 
+
 // Cross-browser xml parsing
             jQuery.parseXML = function (data) {
                 var xml;
@@ -14783,10 +14804,10 @@
                 return target;
             }
 
-            /* Handles responses to an ajax request:
-             * - finds the right dataType (mediates between content-type and expected dataType)
-             * - returns the corresponding response
-             */
+          /* Handles responses to an ajax request:
+           * - finds the right dataType (mediates between content-type and expected dataType)
+           * - returns the corresponding response
+           */
             function ajaxHandleResponses(s, jqXHR, responses) {
 
                 var ct, type, finalDataType, firstDataType,
@@ -14842,9 +14863,9 @@
                 }
             }
 
-            /* Chain conversions given the request and the original response
-             * Also sets the responseXXX fields on the jqXHR instance
-             */
+          /* Chain conversions given the request and the original response
+           * Also sets the responseXXX fields on the jqXHR instance
+           */
             function ajaxConvert(s, response, jqXHR, isSuccess) {
                 var conv2, current, conv, tmp, prev,
                     converters = {},
@@ -14959,17 +14980,17 @@
                     async: true,
                     contentType: "application/x-www-form-urlencoded; charset=UTF-8",
 
-                    /*
-                     timeout: 0,
-                     data: null,
-                     dataType: null,
-                     username: null,
-                     password: null,
-                     cache: null,
-                     throws: false,
-                     traditional: false,
-                     headers: {},
-                     */
+                  /*
+                   timeout: 0,
+                   data: null,
+                   dataType: null,
+                   username: null,
+                   password: null,
+                   cache: null,
+                   throws: false,
+                   traditional: false,
+                   headers: {},
+                   */
 
                     accepts: {
                         "*": allTypes,
@@ -16484,6 +16505,6 @@
         });
 
 
-        /***/
+    /***/
     })
-    /******/]);
+  /******/]);
